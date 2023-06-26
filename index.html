@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: rgb(233, 231, 231);" >
+    <div style="background-color: white; padding: 10px;">
+        <span style="background-color: rgb(210, 2, 2); color: white; font-size: 30px;">ZABBIX</span>
+        <label for="" style="margin-left: 50px; font-size: 20px; color: rgb(204, 205, 207); font-weight: 100;">Monitoring</label>
+        <label for="" style="margin-left: 50px; font-size: 20px; color: rgb(204, 205, 207); font-weight: 100;">Inventory</label>
+        <label for="" style="margin-left: 50px; font-size: 20px; color: rgb(204, 205, 207); font-weight: 100;">Reports</label>
+        <label for="" style="margin-left: 50px; font-size: 20px; color: rgb(204, 205, 207); font-weight: 100;">Configuration</label>
+        <label for="" style="margin-left: 50px; font-size: 20px; color: rgb(204, 205, 207); font-weight: 100;">Administration</label>
+    </div>
+
+    <div style="background-color: rgb(6, 34, 133); color: white; padding: 5px; ">
+        <label for="" style="font-size: medium; font-weight: 100;">Host groups</label>
+        <label for="" style="font-size: medium; font-weight: 100; margin-left: 30px;">Templates</label>
+        <label for="" style="font-size: medium; font-weight: 100; margin-left: 30px;">Hosts</label>
+        <label for="" style="font-size: medium; font-weight: 100; margin-left: 30px;">Maintenance</label>
+        <label for="" style="font-size: medium; font-weight: 100; margin-left: 30px;">Action</label>
+        <label for="" style="font-size: medium; font-weight: 100; margin-left: 30px;">Event Correlation</label>
+        <label for="" style="font-size: medium; font-weight: 100; margin-left: 30px;">Discovery</label>
+        <label for="" style="font-size: medium; font-weight: 100; margin-left: 30px;">Services</label>
+    </div>
+
+    <span style="font-size: large; margin-left: 15px;">Hosts</span>
+    <label for="" style="margin-left: 1200px;font-size: small; font-weight: 200;">Group</label>
+    <select name="" id="" style="font-size: medium;">
+        <option value="">all</option>
+        <option value="">none</option>
+    </select>
+
+    
+    
+    <button style="background-color: rgb(1, 183, 255); ;"><span style="font-size: small;color: white;">Create host</span></button>
+    <button  style="background-color: rgb(1, 182, 253); ;"><span style="font-size: small;color: white;">Import</span></button>
+    
+    <table class="table" style="background-color: white; margin-top: 50px;">
+        <tr>
+            <td>
+                
+                    <label for="" style="margin-left: 329px;">Name</label>
+                    <input type="text"><br>
+            
+                    <label for="" style="margin-left: 300px;">Templates</label>
+                    <input type="text" placeholder="type here to search">
+                    <button style="background-color: white;">Select</button><br>
+            
+                    <label for="" style="margin-left: 339px;">DNS</label>
+                    <input type="text"><br>
+            
+                    <label for="" style="margin-left: 355px;">IP</label>
+                    <input type="text"><br>
+                    
+                    <label for="" style="margin-left: 340px;">Port</label>
+                    <input type="text"><br>
+            </td>
+            <td>
+                <label for="">Monitored by</label>
+                <button>Any</button>
+                <button style="background-color: white;">Server</button>
+                <button style="background-color: white;">Proxy</button><br>
+
+                <label for=""style="margin-left: 48px;">Proxy</label>
+                <input type="text" style="background-color: rgb(233, 231, 231);" >
+                <button>Select</button><br>
+
+                <label for="" style="margin-left: 55px;">Tags</label>
+                <button>And/Or</button>
+                <button style="background-color: white;">Or</button> <br>
+
+                <input type="text" placeholder="tag" style="margin-left: 90px;">
+                <button>Contains</button>
+                <button style="background-color: white;">Equals</button>
+                <input type="text">
+                <a href="">Remove</a> <br>
+                <a href="" style="margin-left: 89px;">Add</a><br>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"  style="text-align: center;">
+                <button style="background-color: blue; color: white;">Apply</button>
+                <button style="background-color: white; border-color: skyblue; color: skyblue;" >Reset</button>
+            </td>
+            
+        </tr>
+    </table>
+    
+    <div>
+        <table style="font-size: 10px; color: rgb(1, 182, 253);">
+            <tr style="background-color: white; color: rgb(188, 183, 183);">
+                <td><input type="checkbox" name="" id="" style="margin-left: 5px; margin-right: 10px;"></td>
+                <td><span style="font-size: 10px; color: rgb(1, 182, 253);">Name</span></td>
+                <td>Applications</td>
+                <td>Items</td>
+                <td>Triggers</td>
+                <td>Graphs</td>
+                <td>Discovery</td>
+                <td>Web</td>
+                <td>Interface</td>
+                <td>Templates</td>
+                <td><span style="font-size: 10px; color: rgb(1, 182, 253);">Status</span></td>
+                <td>Availability</td>
+                <td>Agent encryption</td>
+                <td><span style="margin-right: 20px;">Info</span></td>
+                <td><span style="margin-right: 20px;">Tags</span></td>
+            </tr>
+            <tr>
+                <td><p></p></td>
+            </tr>
+            <tr style="background-color: white; color: rgb(179, 181, 182);">
+                <td><input type="checkbox" name="" id="" style="margin-left: 5px; margin-right: 10px;"></td>
+                <td>AB Switch_1</td>
+                <td>Applications1</td>
+                <td>Items</td>
+                <td>Triggers</td>
+                <td>Graphs</td>
+                <td>Discovery1</td>
+                <td>Web</td>
+                <td>192.168.200.251:161</td>
+                <td><p style="color: rgb(188, 183, 183);">Templates Module Interface SNMPv2</p></td>
+                <td><span style="color: rgb(41, 240, 61);">Enabled</span></td>
+                
+                <td><button>ZBX</button><button style="background-color: rgb(7, 135, 7);color: rgb(251, 251, 251);">SNMP</button><button>JMX</button><button>IPMI</button>
+                </td>
+                <td><button style="background-color: rgb(7, 135, 7);color: rgb(251, 251, 251);">NONE</button></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr style="background-color: white;color: rgb(179, 181, 182);">
+                <td><input type="checkbox" name="" id="" style="margin-left: 5px; margin-right: 10px;"></td>
+                <td> <p style="margin-right: 25px;">Second CentOS_Server</p></td>
+                <td> <p style="margin-right: 15px;">Applications10</p></td>
+                <td><p style="margin-right: 15px;">Items34</p></td>
+                <td><p style="margin-right: 15px;">Triggers15</p></td>
+                <td><p style="margin-right: 15px;">Graphs5</p></td>
+                <td><p style="margin-right: 11px;">Discovery2</p></td>
+                <td><p style="margin-right: 11px;">Web</p></td>
+                <td><p style="margin-right: 11px;">192.168.200.250:10050</p></td>
+                <td><p style="margin-right: 200px;color: rgb(188, 183, 183);">Templates OS Linux(Template App Zabbix Agent) </p></p></td>
+                <td><p style="margin-right: 30px; color: rgb(41,240,61);">Enabled</p></td>
+                
+                <td><p style="margin-right: 30px;"><button style="background-color: red; color: white;">ZBX</button><button>SNMP</button><button>JMX</button><button>IPMI</button></p>
+                </td>
+                <td><p style="margin-right: 11px;"><button style="background-color: rgb(7, 135, 7);color: rgb(251, 251, 251);">PSK</button><button>NONE</button><button style="background-color: rgb(7, 135, 7);color: rgb(251, 251, 251);">PSK</button><button>CERT</button></p></td>
+                <td><p style="margin-right: 11px;"></p></td>
+                <td><p style="margin-right: 11px;"></p></td>
+            </tr>
+
+            <tr style="background-color: white; color: rgb(179, 181, 182);">
+                <td><input type="checkbox" name="" id="" style="margin-left: 5px; margin-right: 10px;"></td>
+                <td>Zabbix server</td>
+                <td>Applications11</td>
+                <td>Items100</td>
+                <td>Triggers54</td>
+                <td>Graphs17</td>
+                <td>Discovery2</td>
+                <td>Web</td>
+                <td>127.0.0.1:10050</td>
+                <td> <span style="color: rgb(188, 183, 183);">Templates Spp Zabbix Server Template OS Linux(Template App Zabbix Agent) </span></td>
+                <td> <span style="color: rgb(41, 240, 61);">Enabled</span></td>
+                
+                <td><button style="background-color: rgb(7, 135, 7);color: rgb(251, 251, 251);">ZBX</button><button>SNMP</button><button>JMX</button><button>IPMI</button>
+                </td>
+                <td><button style="background-color: rgb(7, 135, 7);color: rgb(251, 251, 251);">NONE</button></td>
+                <td></td>
+                <td></td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+</html>
